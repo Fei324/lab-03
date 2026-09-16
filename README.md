@@ -2,12 +2,12 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Feiyu Lu`
+- **CCID:** `flu3`
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+I used ChatGPT for help with errors and debugging my code. When I saw red lines in my code, I asked ChatGPT what the errors were and why they happened. Most of the errors were syntax errors, such as unmatched brackets or parentheses. Then I followed the suggestions and tried to fix the code by myself.
 
 ## Verbal Collaboration
 
