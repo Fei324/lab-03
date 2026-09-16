@@ -19,7 +19,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.listycity3.ui.theme.ListyCity3Theme
-
+//I used ChatGPT for help with errors and debugging my code.
+// When I saw red lines in my code, I asked ChatGPT what the errors were and why they happened.
+// Most of the errors were syntax errors, such as unmatched brackets or parentheses. Then I followed the suggestions and tried to fix the code by myself.
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     CityListScreen(
                         cities = cityRepository.cities,
+                        onAddCity = { cityRepository.addCity(it) },
+                        onUpdateCity = { oldCity, updatedCity ->
+                            cityRepository.updateCity(oldCity, updatedCity)
+                        },
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
